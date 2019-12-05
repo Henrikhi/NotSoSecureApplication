@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Creating a new account</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+        <h1>Create a new account.</h1>
+        
+        
+        <form name='newAccount' action="/newAccount" method='POST'>
+            <table>
+                <tr>
+                    <td>Name:</td>
+                    <td><input type='text' name='name' value=''/></td>
+                </tr>
+                <tr>
+                    <td>Password:</td>
+                    <td><input type='text' name='password' value=''/></td>
+                </tr>
+                
+                <tr>
+                    <td><input name="submit" type="submit" value="create!" /></td>
+                </tr>
+            </table>
+        </form>
+
+
+
+        <h2>Already have a account?</h2>
+        <a href="/login">Log in with existing account.</a>
+
+
+    </body>
+</html>
